@@ -3,18 +3,21 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="description" content="Proyecto de la primera generación del 2014 del curso de diseño web online" />
+        <meta name="viewport" content="width=device-width, minimun-scale=1, maximun-scale=1" />
 	<title>Puls2014: Comunidad online de gente atractiva</title>
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/estilos.css" />
+        
+        <script src="js/prefixfree.js"></script>
 </head>
 <body>
     <header>
         <figure id="logo">
-            <img src="logo.png" />
+            <img src="images/logo.png" />
         </figure>
         <h1>Puls2014: Comunidad para personas atractivas y sexy</h1>
         <figure id="avatar">
-            <img src="avatar.jpg"/>
+            <img src="images/avatar.jpg"/>
         </figure>
     </header>
     <nav>
@@ -25,14 +28,21 @@
             <li><a href="#">CSS3</a></li>
             <li><a href="#">Django</a></li>
             <li id="publicar_nav">
-                <a href="#">Publicar</a>
+                <a class="icon-lapiz" href="#">Publicar</a>
             </li>
         </ul>
     </nav>
+    <aside>
+        <video width="320" height="240" controls>
+            <source src="videos/lecturas.mp4" type="video/mp4">
+            <source src="videos/lecturas.webm" type="video/webm">
+            <!-- ACTUALIZA TU NAVEGADOR -->
+        </video>
+    </aside>
     <section id="contenido">
         <article class="item">
             <figure class="imagen_item">
-                <img src="imagen.jpg" />
+                <img src="images/imagen.jpg" />
             </figure>
             <h2 class="titulo_item">
                 <a href="#">Project Morpheus amenaza a Oculus Rift</a>
@@ -45,17 +55,17 @@
                 <span class="fecha_item">hace <strong>5</strong> min</span>
             </div>
             <div class="votacion">
-                <a class="up" href="#">U</a>
+                <a class="up icon-flecha-arriba" href="#"></a>
                 720
-                <a class="down" href="#">D</a>
+                <a class="down icon-flecha-abajo" href="#"></a>
                 <a class="comentarios_item" href="#">69</a>
-                <a class="guardar_item" href="#">X</a>
+                <a class="guardar_item icon-estrella" href="#"></a>
             </div>
         </article>
         
         <article class="item">
             <figure class="imagen_item">
-                <img src="imagen.jpg" />
+                <img src="images/imagen.jpg" />
             </figure>
             <h2 class="titulo_item">
                 <a href="#">Módulo de consultas MySQL para Node.js</a>
@@ -68,17 +78,17 @@
                 <span class="fecha_item">hace <strong>5</strong> min</span>
             </div>
             <div class="votacion">
-                <a class="up" href="#">U</a>
+                <a class="up icon-flecha-arriba" href="#"></a>
                 720
-                <a class="down" href="#">D</a>
+                <a class="down icon-flecha-abajo" href="#"></a>
                 <a class="comentarios_item" href="#">69</a>
-                <a class="guardar_item" href="#">X</a>
+                <a class="guardar_item icon-estrella" href="#"></a>
             </div>
         </article>
         
         <article class="item">
             <figure class="imagen_item">
-                <img src="imagen.jpg" />
+                <img src="images/imagen.jpg" />
             </figure>
             <h2 class="titulo_item">
                 <a href="#">Efectos fotográficos con CSS3</a>
@@ -91,17 +101,17 @@
                 <span class="fecha_item">hace <strong>5</strong> min</span>
             </div>
             <div class="votacion">
-                <a class="up" href="#">U</a>
+                <a class="up icon-flecha-arriba" href="#"></a>
                 720
-                <a class="down" href="#">D</a>
+                <a class="down icon-flecha-abajo" href="#"></a>
                 <a class="comentarios_item" href="#">69</a>
-                <a class="guardar_item" href="#">X</a>
+                <a class="guardar_item icon-estrella" href="#"></a>
             </div>
         </article>
         
         <article class="item">
             <figure class="imagen_item">
-                <img src="imagen.jpg" />
+                <img src="images/imagen.jpg" />
             </figure>
             <h2 class="titulo_item">
                 <a href="#">Redirección HTTP en Laravel, Django, Tornado y más</a>
@@ -114,17 +124,17 @@
                 <span class="fecha_item">hace <strong>5</strong> min</span>
             </div>
             <div class="votacion">
-                <a class="up" href="#">U</a>
+                <a class="up icon-flecha-arriba" href="#"></a>
                 720
-                <a class="down" href="#">D</a>
+                <a class="down icon-flecha-abajo" href="#"></a>
                 <a class="comentarios_item" href="#">69</a>
-                <a class="guardar_item" href="#">X</a>
+                <a class="guardar_item icon-estrella" href="#"></a>
             </div>
         </article>
         
         <article class="item">
             <figure class="imagen_item">
-                <img src="imagen.jpg" />
+                <img src="images/imagen.jpg" />
             </figure>
             <h2 class="titulo_item">
                 <a href="#">WebSockets seguros en Nginx</a>
@@ -137,17 +147,17 @@
                 <span class="fecha_item">hace <strong>5</strong> min</span>
             </div>
             <div class="votacion">
-                <a class="up" href="#">U</a>
+                <a class="up icon-flecha-arriba" href="#"></a>
                 720
-                <a class="down" href="#">D</a>
+                <a class="down icon-flecha-abajo" href="#"></a>
                 <a class="comentarios_item" href="#">69</a>
-                <a class="guardar_item" href="#">X</a>
+                <a class="guardar_item icon-estrella" href="#"></a>
             </div>
         </article>
         
         <article class="item">
             <figure class="imagen_item">
-                <img src="imagen.jpg" />
+                <img src="images/imagen.jpg" />
             </figure>
             <h2 class="titulo_item">
                 <a href="#">Cómo calcular tamaños tipográficos para Web</a>
@@ -160,11 +170,11 @@
                 <span class="fecha_item">hace <strong>5</strong> min</span>
             </div>
             <div class="votacion">
-                <a class="up" href="#">U</a>
+                <a class="up icon-flecha-arriba" href="#"></a>
                 720
-                <a class="down" href="#">D</a>
+                <a class="down icon-flecha-abajo" href="#"></a>
                 <a class="comentarios_item" href="#">69</a>
-                <a class="guardar_item" href="#">X</a>
+                <a class="guardar_item icon-estrella" href="#"></a>
             </div>
         </article>
     </section>
