@@ -114,6 +114,7 @@ nav ul #publicar_nav a{
 #contenido .item{
     background: white;
     border-bottom: 3px solid #22BCE0;
+    margin-bottom: 3em;
     min-height: 128px;
     position: relative;
 }
@@ -162,7 +163,16 @@ nav ul #publicar_nav a{
 }
 
 #contenido .item .votacion{
-    border: 1px solid red;
+    background: white;
+    border-radius: 0 0 0.5em 0.5em;
+    left: 3%;
+    margin-top: 3px;
+    padding: 0.5em 1em;
     position: absolute;
     top: 100%;
+    right: 3%;
+}
+
+#contenido .item .votacion .comentarios_item, #contenido .item .guardar_item{
+    float: right;
 }
